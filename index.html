@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBHM!</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="da.scss">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="logo">
+                <a href="#">HBHM!</a>
+            </div>
+            <div class="other">
+                <a href="#">Home</a>
+                <a href="#advices">Advices</a>
+                <a href="#recipes" id="recepti">Recipes</a>
+            </div>
+            <div class="btn-nav">
+                <a id="sign-in" href="#slider"><button href="" class="button" id="a">Sign in</button></a>
+            </div>
+        </div>
+        <div class="main">
+            <h1>healthy body, <br> healthy mind!</h1>
+            <div class="content">
+                <h2>time to get healthy!</h2>
+                <p>"HBHM!" is a call to prioritize self-care and take steps towards a healthier lifestyle. This involves
+                    implementing an exercise routine, balanced diet, enough sleep, managing stress, and seeking
+                    professional help if needed.</p>
+                <div class="read-more-btn">
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="advices" class="eating-healthy">
+        <div class="healthy-info">
+            <h2>eat healthier - feel better</h2>
+            <p>Eating healthier has been linked to improved physical and mental well-being, including better mood,
+                increased energy levels, and improved sleep quality. </p>
+            <div class="read-more-btn">
+                <button>Read more</button>
+            </div>
+        </div>
+        <div class="eating-card1">
+            <i class="fas fa-apple-alt"></i>
+            <h2>Feeling Better with a Balanced Diet</h2>
+            <p>A balanced diet rich in fruits, vegetables, whole grains, and lean proteins provides essential nutrients
+                to fuel the body and support brain function. </p>
+        </div>
+
+        <div class="eating-card2">
+            <i class="fas fa-dumbbell"></i>
+            <h2>The Link Between Healthy Eating and Well-Being</h2>
+            <p>Research has shown that eating healthier can lead to improved physical and mental well-being, including
+                better mood, increased energy levels, and improved sleep quality. </p>
+        </div>
+
+        <div class="eating-card3">
+            <i class="fas fa-utensils"></i>
+            <h2>Transform Your Life with Healthy Eating</h2>
+            <p>Healthy eating is a powerful tool for improving physical and mental well-being. By fueling your body with
+                nutritious foods, you can transform your life and feel better than ever before. </p>
+        </div>
+    </div>
+
+    <div class="newsletter">
+        <h1 id="da">be healthy!</h1>
+        <form action="#" class="newsletterForm">
+            <input type="email" placeholder="Enter a Valid E-mail Adress" id="newsletterInput"> <br>
+            <button id="submit-btn">Submit</button>
+            <p id="checker"></p>
+        </form>
+    </div>
+
+
+    <h1 id="recipes" class="our-recipes">our suggestions</h1>
+
+    <div class="filter">
+        <label for="difficulty-filter">Difficulty:</label>
+        <select id="difficulty-filter">
+            <option value="">All</option>
+            <option value="easy">Easy to Make</option>
+            <option value="hard">Hard to Make</option>
+        </select>
+
+        <label for="rating-filter">Rating:</label>
+        <select id="rating-filter">
+            <option value="">All</option>
+            <option value="best">Best Rated</option>
+            <option value="worst">Worst Rated</option>
+        </select>
+
+        <button type="button" id="filter-button">Filter</button>
+    </div>
+
+    <div class="recipe-grid" id="recipe-grid"></div>
+
+    <div class="form">
+        <div class="add-rec">
+            <form id="add-recipe-form">
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipe-name" required>
+                <br>
+                <label for="recipe-difficulty">Difficulty:</label>
+                <select id="recipe-difficulty" name="recipe-difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <br>
+                <label for="recipe-rating">Rating:</label>
+                <input type="number" id="recipe-rating" name="recipe-rating" min="1" max="5" required>
+                <br>
+                <label for="recipe-ingredients">Description:</label>
+                <textarea id="recipe-ingredients" name="recipe-ingredients"></textarea>
+                <br>
+                <button type="submit" class="submit-recipe" id="submit-rec">Submit</button>
+            </form>
+        </div>
+        <img src="./Images/peaches.jpg" class="peaches">
+    </div>
+    <div id="slider">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                </div>
+                <p>Lost password <a href="#">Click Here!</a></p>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="c1">
+            <div class="short-about">
+                <h3>About us</h3>
+                <p>We're a team of food enthusiasts dedicated to providing you with delicious, nutritious recipes that
+                    are easy to make. Our recipes are made with fresh, whole ingredients and are designed to help you
+                    maintain a healthy lifestyle. </p>
+            </div>
+            <div class="social-media">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="short-about"></div>
+        </div>
+
+        <div class="c2">
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="txt">
+                    <p>Matice Hrvatske 23</p>
+                    <p>Split, Croatia</p>
+                </div>
+            </div>
+
+            <div class="tel">
+                <i class="fas fa-phone"></i>
+                <p>+385 98 6756 758</p>
+            </div>
+
+            <div class="mail">
+                <i class="fas fa-envelope"></i>
+                <p>hbhm@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="c3">
+            <h1>HBHM!</h1>
+            <ul class="footer-nav">
+                <li>Home |</li>
+                <li>Advices |</li>
+                <li>Recipes |</li>
+            </ul>
+            <p>All rights reserved ©</p>
+        </div>
+    </div>
+
+    <script src="./JS/app.js"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

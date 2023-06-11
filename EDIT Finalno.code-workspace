@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "EDIT Finalno",
+			"path": "."
+		},
+		{
+			"name": "fontawesome-free-6.4.0-web",
+			"path": "../fontawesome-free-6.4.0-web"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "EDIT Finalno"
+	}
+}
